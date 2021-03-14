@@ -10,8 +10,8 @@ const port = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
-// const uri = "mongodb+srv://mb16:mb16@cluster0.swosj.mongodb.net/data?retryWrites=true&w=majority"
-const uri = "mongodb+srv://mb16biswas:mb16biswas123@cluster0.4ueda.mongodb.net/data?retryWrites=true&w=majority"
+
+const uri = ""
 mongoose.connect(uri, { useNewUrlParser: true, useCreateIndex: true  ,  useUnifiedTopology: true  }
 );
 const connection = mongoose.connection;
